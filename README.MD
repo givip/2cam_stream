@@ -20,6 +20,10 @@
 - `cd ~/catkin_ws`
 - `catkin_make`
 
-## Run locally
-- `roslaunch ~/catkin_ws/src/double_cam_stream/launch/usb_cam/2cam_publisher.launch`
-- `roslaunch ~/catkin_ws/src/double_cam_stream/launch/usb_cam/2cam_subscriber.launch`
+## Run locally publisher node
+- `cd ~/catkin_ws/src/double_cam_stream/launch/usb_cam/`
+- `roslaunch double_cam_publisher.launch`
+
+## Run locally subscriber node
+- `cd ~/catkin_ws/src/double_cam_stream/launch/usb_cam/`
+- `roslaunch double_cam_subscriber.launch`
