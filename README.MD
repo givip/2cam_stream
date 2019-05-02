@@ -16,7 +16,7 @@
 - `cd ~/catkin_ws/src`
 - Install dependency 'usb_cam' `sudo apt-get install ros-melodic-usb-cam`
 - Clone forked `image_pipeline` repo: `git clone https://github.com/givip/image_pipeline`
-- Clone repo: `git clone https://github.com/givip/2cam_stream.git`
+- Clone repo: `git clone https://github.com/givip/double_cam_stream.git`
 - `cd ~/catkin_ws`
 - `catkin_make`
 
