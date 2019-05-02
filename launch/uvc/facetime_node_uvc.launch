@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="visualize" default="false"/>
+
+    <include file="core_uvc.launch">
+        <arg name="vendor" value="0x203a"/>
+        <arg name="product" value="0xfff9"/>
+        <arg name="serial" value="DJH55146CE0G1HPB1"/>
+        <arg name="video_mode" value="yuyv"/> <!-- or yuyv/nv12/mjpeg -->
+        <arg name="visualize" value="$(arg visualize)"/>
+        <arg name="camera_name" value="FaceTimeHD" />
+    </include>
+
+</launch>

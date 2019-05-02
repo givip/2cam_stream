@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="root_topic" default="teleop"/>
+    <arg name="debug" default="false"/>
+
+    <group ns="$(arg root_topic)">
+        <include file="camera_node.launch">
+            <arg name="video_device" value="/dev/video0"/>
+            <arg name="visualize" value="$(arg debug)"/>
+            <arg name="root_topic" value="$(arg root_topic)"/>
+            <arg name="camera_name" value="FaceTimeCamera"/>
+        </include>
+
+        <include file="camera_node.launch">
+            <arg name="video_device" value="/dev/video1"/>
+            <arg  name="visualize" value="$(arg debug)"/>
+            <arg name="root_topic" value="$(arg root_topic)"/>
+            <arg name="camera_name" value="A4TechCamera"/>
+        </include>
+    </group>
+</launch>

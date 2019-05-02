@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="camera0" default="0"/>
+    <arg name="camera1" default="1"/>
+
+    <group ns="double_camera_stream">
+
+        <include file="facetime_node_uvc.launch">
+            <arg name="visualize" value="true"/>
+        </include>
+
+        <include file="a4tech_node_uvc.launch">
+            <arg name="visualize" value="true"/>
+        </include>
+
+    </group>
+
+</launch>
